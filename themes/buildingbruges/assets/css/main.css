@@ -114,6 +114,20 @@ hr {
   max-width: 28ch;
 }
 
+.site-title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.site-title a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.site-title a:hover { color: var(--accent); }
+
 /* ----- Primary nav ----- */
 .header-navigation-wrapper { flex: 0 1 auto; }
 

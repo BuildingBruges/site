@@ -1,9 +1,11 @@
 baseURL = 'https://buildingbruges.be/'
 languageCode = 'en-us'
 title = 'Building Bruges'
-description = 'Building a Developer Community in and Around Bruges'
 theme = 'buildingbruges'
 paginate = 10
+
+[params]
+description = 'Building a Developer Community in and Around Bruges'
 
 [[menus.main]]
 name   = "Home"
