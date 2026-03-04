@@ -15,7 +15,7 @@ Software engineers use versioning all the time, and .NET is no different. Over t
 
 ## About Jon Skeet
 
-![](/images/2020/05/Cropped-hi-res-730x1024.jpg)
+![](Cropped-hi-res-730x1024.jpg)
 
 Jon Skeet is a Staff Developer Platform Engineer at Google, working on Google Cloud Platform client libraries for .NET, based in the London office. (That's the theory, anyway. Most of the time he works from his shed instead.) He's best known for contributions to [Stack Overflow](https://stackoverflow.com/users/22656/jon-skeet) as well as his book, [C# in Depth](https://www.manning.com/books/c-sharp-in-depth-fourth-edition). Additionally he is the primary maintainer of the [Noda Time](https://nodatime.org/) date/time library for .NET.  
 Outside of software, Jon is a committed Christian, and enjoys theatre (particularly musical theatre), playing board games, and spending time with his amazing family.

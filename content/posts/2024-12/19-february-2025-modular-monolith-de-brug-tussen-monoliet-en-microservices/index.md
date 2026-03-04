@@ -19,8 +19,8 @@ This meetup will happen in the offices of [Bits of Love](https://www.bitsoflove.
 
 There are a few parking spaces available in the inner court yard of the building complex:
 
-![](/images/2024/12/parking-2.png)
+![](/images/bits-of-love/parking-2.png)
 
 Then there are more spaces in front of the town hall of Sint-Michiels and in the Rijselstraat:
 
-![](/images/2024/12/parking-1.png)
+![](/images/bits-of-love/parking-1.png)

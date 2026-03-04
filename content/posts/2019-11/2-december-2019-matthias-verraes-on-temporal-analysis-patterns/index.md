@@ -19,7 +19,7 @@ Please notify us of your presence on [meetup.com](https://www.meetup.com/Bruges
 
 ## About Matthias Verraes
 
-![](/images/2019/11/mathias-verraes.jpg)
+![](mathias-verraes.jpg)
 
 Mathias Verraes advises organisations on designing and modelling software for complex environments, including architecture, analysis, testing, and refactoring “unmaintainable” systems. He has worked with clients in Government, Logistics, Mobility, Energy, E-Commerce, and more. 
 

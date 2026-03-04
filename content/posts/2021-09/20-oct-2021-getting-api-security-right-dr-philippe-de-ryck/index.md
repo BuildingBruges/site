@@ -11,7 +11,7 @@ In this session, we use real-world cases to dive into best practices for securin
 
 ## Philippe De Ryck
 
-![](/images/2021/09/clean_498892139-1.jpeg)
+![](clean_498892139-1.jpeg)
 
 Philippe De Ryck helps developers protect companies through better web security. His Ph.D. in web security from KU Leuven lies at the basis of his exceptional knowledge of the security landscape. As the founder of Pragmatic Web Security, Philippe delivers security training and security consulting to companies worldwide. His online course platform allows anyone to learn complex security topics at their own pace. Philippe is a Google Developer Expert and an Auth0 Ambassador for his community contributions on the security of web applications and APIs.
 

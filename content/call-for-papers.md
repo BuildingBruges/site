@@ -1,7 +1,6 @@
 +++
 title = "Call for Papers"
 date = "2022-09-30T09:52:36+00:00"
-author = "ar01grd5"
 +++
 
 Feel like presenting a topic, hosting a workshop, bringing a new and upcoming technology, sharing your knowledge and experience, discussing the ethics around AI systems?

@@ -11,7 +11,7 @@ In this talk, simulation engineer Lienert Deprez explains what a simulation ca
 
 ## Lienert Deprez
 
-![](/images/2023/06/2018-08-07-16-11-28-Medium.jpeg)
+![](2018-08-07-16-11-28-Medium.jpeg)
 
 By day Lienert develops his digital twins in C#, by night he creates software for escape rooms. Lienert has been in love with the Unity game engine for over 7 years.
 

@@ -9,7 +9,7 @@ The world of automated tests can be quite overwhelming. Tests exist in a wide va
 
 ## Jan Van Ryswyck
 
-![](/images/2024/04/unnamed-file-2.jpg)
+![](unnamed-file-2.jpg)
 
 Jan is a technical coach / software craftsman at Principal IT (<https://principal-it.eu>). From time to time, he likes to speak at conferences and developer community gatherings.
 

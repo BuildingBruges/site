@@ -122,7 +122,7 @@ hr {
 }
 
 .site-title a {
-  color: var(--primary);
+  color: var(--secondary);
   text-decoration: none;
 }
 
@@ -305,8 +305,7 @@ time {
   flex-wrap: wrap;
 }
 
-.pagination a,
-.pagination span {
+.pagination a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -327,8 +326,7 @@ time {
   text-decoration: none;
 }
 
-.pagination .active span,
-.pagination span.current {
+.pagination .active a {
   background: var(--accent);
   border-color: var(--accent);
   color: #fff;
@@ -338,6 +336,11 @@ time {
 .pagination .disabled span {
   color: var(--border);
   cursor: default;
+}
+
+.pagination .disabled a:hover {
+  border: 1px solid var(--border);
+  background: unset;
 }
 
 /* ----- Responsive header ----- */

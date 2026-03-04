@@ -9,7 +9,7 @@ Past weekend we delivered over 1300 meals at our basketball clubs takeaway fundr
 
 ## Yves Goeleven
 
-![](/images/2022/09/Yves-Speaker.jpg)
+![](Yves-Speaker.jpg)
 
 Yves is an independent software architect and founder of clubmanagement.io. He is specialized in the design of distributed software systems using Progressive Web Applications, Event Driven Architecture, Domain Driven Design, Event Sourcing, messaging, and Microsoft Azure.
 

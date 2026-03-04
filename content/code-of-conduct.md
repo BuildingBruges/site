@@ -1,7 +1,6 @@
 +++
 title = "Code of Conduct"
 date = "2019-08-21T20:05:11+00:00"
-author = "Peter"
 +++
 
 Building Bruges has adopted the [Berlin Code of Conduct](http://berlincodeofconduct.org/). When you attend our events, you are expected to have read the document and behave accordingly. Everyone is welcome in our community.

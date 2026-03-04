@@ -13,7 +13,7 @@ So expand your horizons, boost your knowledge, and let this session be your firs
 
 ## Ruben Delange
 
-![](/images/2024/08/13cc-400o400o2-sto9Ya5LfjZ4kU25d48UAF.png)
+![](13cc-400o400o2-sto9Ya5LfjZ4kU25d48UAF.png)
 
 Ruben is a passionate Azure Architect at Zure. His job is to design and implement reliable, secure and scalable integration and back-end solutions in the Azure cloud. His focus is mainly on architecting and building Azure PaaS fit-for-purpose solutions.
 

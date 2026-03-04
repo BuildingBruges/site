@@ -13,7 +13,7 @@ However, there are more complex scenarios to consider when investing in the visi
 
 ## Laïla Bougriâ
 
-![](/images/2023/02/highres_510670366.jpeg)Laïla Bougriâ
+![](highres_510670366.jpeg)Laïla Bougriâ
 
 Laïla Bougriâ is a software engineer at Particular Software, makers of NServiceBus and a Microsoft Azure MVP. She's passionate about software and always looking for patterns, both in code and in yarn. In her free time she loves to knit or crochet and spend time with her kids playing whatever the day brings!
 

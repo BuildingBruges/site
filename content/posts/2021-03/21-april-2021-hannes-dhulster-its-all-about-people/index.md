@@ -10,7 +10,7 @@ We’ll tell you what we changed, how we handled that and how this affects all p
 
 ## Hannes D'Hulster
 
-![](/images/2021/03/20201130-161636-smoothsailing-IneDehandschutter-3-681x1024.jpg)
+![](20201130-161636-smoothsailing-IneDehandschutter-3-681x1024.jpg)
 
 Born in Bruges, studied in interaction design in Genk and designed educational games, websites and applications since 2001. With his collective Smooth Sailing he helps start-ups and scale-ups to reduce the chaos in their head, software and team.  
 In his hometown, he organises Cityhacks, a yearly hackathon and during his student years he helped building Brugsebuurten. In his spare time he likes to go for a “toerke van de vesten” and is part of the board of Het Entrepot.

@@ -23,7 +23,7 @@ What are the benefits of applying them in your daily dev routines!
 
 ## Frederic Pape
 
-![](/images/2022/11/techorama-speaking-1024x768.jpeg)
+![](techorama-speaking-1024x768.jpeg)
 
 Senior Software Engineer, Axians Business Applications In the software industry since 2001, working at Axians since 2006. Since the start of my career still a tech boy loving programming languages, tools, frameworks… but my main passion is creating and delivering software. My aim is always to build and deliver the 'right' thing. I'm developer advocate, championing DDD, TDD & pair programming. After working hours I'm a husband, father and addicted tabletop gamer.
 
