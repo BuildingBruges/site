@@ -1,4 +1,4 @@
-baseURL = 'https://buildingbruges.github.io/site/'
+baseURL = 'https://buildingbruges.be/'
 languageCode = 'en-us'
 title = 'Building Bruges'
 theme = 'buildingbruges'

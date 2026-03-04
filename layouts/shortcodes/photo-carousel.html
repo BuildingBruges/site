@@ -1,0 +1,22 @@
+{{- $images := sort (.Page.Resources.ByType "image") "Name" -}}
+{{- $duration := "7000" -}}
+{{- $count := len $images -}}
+{{- if gt $count 0 -}}
+<div class="auto-carousel" duration="{{ $duration }}">
+  <ul>
+    {{- range $i, $img := $images }}
+    <li id="slide{{ $i }}"><img src="{{ $img.RelPermalink }}" alt="{{ $img.Name }}" loading="lazy"></li>
+    {{- end }}
+  </ul>
+  <ol>
+    {{- range $i, $img := $images }}
+    <li><a href="#slide{{ $i }}"></a></li>
+    {{- end }}
+  </ol>
+  <div class="prev">&lsaquo;</div>
+  <div class="next">&rsaquo;</div>
+</div>
+{{- end -}}
+
+<link rel="stylesheet" href="/css/auto-carousel.css">
+<script src="/js/auto-carousel.js"></script>

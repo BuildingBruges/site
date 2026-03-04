@@ -7,4 +7,6 @@ aliases = ["/meetup-30-09-photos/"]
 
 Here are some photo's from our first meetup!
 
-[ngg src="galleries" ids="1" display="basic_thumbnail" thumbnail_crop="0"]
+<!--more-->
+
+{{< photo-carousel >}}
