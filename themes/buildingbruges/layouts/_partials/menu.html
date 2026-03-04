@@ -1,21 +1,17 @@
-{{- /*
-Renders a menu for the given menu ID.
-
-@context {page} page The current page.
-@context {string} menuID The menu ID.
-
-@example: {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
-*/}}
-
 {{- $page := .page }}
 {{- $menuID := .menuID }}
 
 {{- with index site.Menus $menuID }}
-  <nav>
-    <ul>
-      {{- partial "inline/menu/walk.html" (dict "page" $page "menuEntries" .) }}
-    </ul>
-  </nav>
+<nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation">
+  <ul class="primary-menu reset-list-style">
+    {{- range . }}
+    {{- $isCurrent := $page.IsMenuCurrent $menuID . }}
+    <li class="menu-item{{- if $isCurrent }} current-menu-item{{ end }}">
+      <a href="{{ .URL }}"{{- if $isCurrent }} aria-current="page"{{ end }}>{{ .Name }}</a>
+    </li>
+    {{- end }}
+  </ul>
+</nav>
 {{- end }}
 
 {{- define "_partials/inline/menu/walk.html" }}

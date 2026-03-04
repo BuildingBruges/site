@@ -1,5 +1,7 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ site.Title }}{{ with site.Params.description }} &#8211; {{ . }}{{ end }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+{{ with site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+<link rel="icon" href="/images/favicon.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/logo.png">
 {{ partialCached "head/css.html" . }}
-{{ partialCached "head/js.html" . }}

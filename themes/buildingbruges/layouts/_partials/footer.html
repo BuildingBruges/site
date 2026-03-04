@@ -1,1 +1,41 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<div class="footer-nav-widgets-wrapper header-footer-group">
+  <div class="footer-inner section-inner">
+    <aside class="footer-widgets-outer-wrapper" role="complementary">
+      <div class="footer-widgets-wrapper">
+
+        <div class="footer-widgets column-one grid-item">
+          <div class="widget widget_recent_entries">
+            <div class="widget-content">
+              <h2 class="widget-title subheading heading-size-3">Recent Posts</h2>
+              <ul>
+                {{- range first 5 (where site.RegularPages "Type" "posts") }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                {{- end }}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-widgets column-two grid-item">
+          <div class="widget widget_text">
+            <div class="widget-content">
+              <div class="textwidget"><p>{{ site.Params.description }}</p></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </aside>
+  </div>
+</div>
+
+<footer id="site-footer" role="contentinfo" class="header-footer-group">
+  <div class="section-inner">
+    <div class="footer-credits">
+      <p class="footer-copyright">&copy; {{ now.Year }} <a href="{{ site.Home.RelPermalink }}">{{ site.Title }}</a></p>
+    </div>
+    <a class="to-the-top" href="#site-header">
+      <span class="to-the-top-long">To the top <span class="arrow" aria-hidden="true">&uarr;</span></span>
+    </a>
+  </div>
+</footer>

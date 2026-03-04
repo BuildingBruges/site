@@ -1,10 +1,29 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+<header class="archive-header has-text-align-center">
+  <div class="archive-header-inner section-inner medium">
+    <h1 class="archive-title">{{ .Title }}</h1>
+  </div>
+</header>
+
+{{ $paginator := .Paginate .Pages.ByDate.Reverse }}
+{{ range $paginator.Pages }}
+<article class="post">
+  <header class="entry-header has-text-align-center">
+    <div class="entry-header-inner section-inner medium">
+      <h2 class="entry-title heading-size-1">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h2>
+      {{ if not .Date.IsZero }}
+      <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format ":date_long" }}</time>
+      {{ end }}
+    </div>
+  </header>
+  <div class="post-inner thin">
+    <div class="entry-content">
       {{ .Summary }}
-    </section>
-  {{ end }}
+    </div>
+  </div>
+</article>
+{{ end }}
+{{ template "_internal/pagination.html" . }}
 {{ end }}

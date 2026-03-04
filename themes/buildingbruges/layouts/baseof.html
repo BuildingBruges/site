@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
+<html class="no-js" lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
 <head>
   {{ partial "head.html" . }}
 </head>
-<body>
-  <header>
+<body class="{{ if .IsHome }}home blog{{ else if .IsPage }}singular{{ else }}archive{{ end }}">
+
+  <a class="skip-link screen-reader-text" href="#site-content">Skip to the content</a>
+
+  <header id="site-header" class="header-footer-group" role="banner">
     {{ partial "header.html" . }}
   </header>
-  <main>
+
+  <main id="site-content" role="main">
     {{ block "main" . }}{{ end }}
   </main>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
+
+  {{ partial "footer.html" . }}
+
+  {{ partialCached "head/js.html" . }}
 </body>
 </html>

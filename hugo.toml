@@ -3,3 +3,29 @@ languageCode = 'en-us'
 title = 'Building Bruges'
 description = 'Building a Developer Community in and Around Bruges'
 theme = 'buildingbruges'
+paginate = 10
+
+[[menus.main]]
+name   = "Home"
+url    = "/"
+weight = 1
+
+[[menus.main]]
+name   = "Newsletter"
+url    = "/stay-informed/"
+weight = 2
+
+[[menus.main]]
+name   = "About"
+url    = "/about/"
+weight = 3
+
+[[menus.main]]
+name   = "Code of Conduct"
+url    = "/code-of-conduct/"
+weight = 4
+
+[[menus.main]]
+name   = "Call for Papers"
+url    = "/call-for-papers/"
+weight = 5

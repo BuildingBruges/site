@@ -1,9 +1,24 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
-    </section>
+  {{ $posts := where site.RegularPages "Type" "posts" }}
+  {{ $paginator := .Paginate $posts.ByDate.Reverse }}
+  {{ range $paginator.Pages }}
+  <article class="post">
+    <header class="entry-header has-text-align-center">
+      <div class="entry-header-inner section-inner medium">
+        <h2 class="entry-title heading-size-1">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h2>
+        {{ if not .Date.IsZero }}
+        <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format ":date_long" }}</time>
+        {{ end }}
+      </div>
+    </header>
+    <div class="post-inner thin">
+      <div class="entry-content">
+        {{ .Summary }}
+      </div>
+    </div>
+  </article>
   {{ end }}
+  {{ template "_internal/pagination.html" . }}
 {{ end }}
