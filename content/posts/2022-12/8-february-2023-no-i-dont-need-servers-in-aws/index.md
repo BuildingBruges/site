@@ -9,7 +9,7 @@ No, I do not need to manage any servers for .NET development in AWS. Serverless 
 
 ## Rob Van Pamel
 
-![](/images/2022/11/b3039c75-a786-46e0-981c-0cd95b5edd6e.jpeg)
+![](b3039c75-a786-46e0-981c-0cd95b5edd6e.jpeg)
 
 Started in 2007 as a .NET developer and still eager to learn new things everyday!
 
