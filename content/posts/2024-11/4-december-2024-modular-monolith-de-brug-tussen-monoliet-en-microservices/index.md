@@ -3,6 +3,12 @@ title = "4 December 2024 - Modular Monolith: de brug tussen monoliet en microser
 date = "2024-11-17T09:37:12+00:00"
 author = "ar01grd5"
 aliases = ["/4-december-2024-modular-monolith-de-brug-tussen-monoliet-en-microservices/"]
+
+[event]
+  title = "Modular Monolith: de brug tussen monoliet en microservices"
+  date = "2024-12-04T20:00:00+01:00"
+  speaker = "Angelo Dejaeghere"
+  meetup_url = "https://www.meetup.com/bruges-software-development-meetup-group/events/304579698/"
 +++
 
 In deze presentatie deel ik mijn inzichten over de 'modular monolith' architectuur en hoe deze een flexibele en schaalbare basis biedt voor moderne applicaties. Ik bespreek hoe je nieuwe applicaties kunt bouwen met deze architectuur, hoe je bestaande systemen kunt omvormen, en ik vergelijk de voor- en nadelen met microservices. Aan de hand van een real-world voorbeeld laat ik zien hoe ik de modular monolith heb toegepast in een project om zowel de ontwikkelsnelheid als de schaalbaarheid te verbeteren, zonder de complexiteit van volledige microservices.

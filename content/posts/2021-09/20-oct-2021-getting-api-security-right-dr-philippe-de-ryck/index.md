@@ -3,6 +3,12 @@ title = "20 Oct 2021: Getting API Security right - Dr. Philippe De Ryck"
 date = "2021-09-22T12:40:55+00:00"
 author = "Peter"
 aliases = ["/20-oct-2021-getting-api-security-right-dr-philippe-de-ryck/"]
+
+[event]
+  title = "Getting API Security right"
+  date = "2021-10-20T20:00:00+02:00"
+  speaker = "Dr. Philippe De Ryck"
+  meetup_url = "https://www.meetup.com/Bruges-Software-Development-Meetup-Group/events/280861696/"
 +++
 
 The shift towards an API landscape indicates a significant evolution in the way we build applications. The rise of JavaScript and mobile applications have sparked an explosion of easily-accessible REST APIs. But does the rise of APIs result in the downfall of security? Why are there so many vulnerabilities and incidents involving APIs? How can you ensure that your APIs are secure?

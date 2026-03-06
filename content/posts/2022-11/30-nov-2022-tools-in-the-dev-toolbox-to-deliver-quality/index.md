@@ -3,6 +3,12 @@ title = "30 Nov 2022: Tools in the dev toolbox to deliver quality"
 date = "2022-11-18T12:18:53+00:00"
 author = "ar01grd5"
 aliases = ["/30-nov-2022-tools-in-the-dev-toolbox-to-deliver-quality/"]
+
+[event]
+  title = "Tools in the dev toolbox to deliver quality"
+  date = "2022-11-30T20:00:00+01:00"
+  speaker = "Frederic Pape"
+  meetup_url = "https://www.meetup.com/bruges-software-development-meetup-group/events/289830980/"
 +++
 
 Software development is expensive, software has bugs, fixing bugs is expensive. Is there no way to turn things around? Don't we have tools available to deliver software with higher quality? Yes we do!

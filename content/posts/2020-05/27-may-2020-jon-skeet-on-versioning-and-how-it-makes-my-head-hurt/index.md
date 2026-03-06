@@ -3,6 +3,12 @@ title = "27 May 2020: Jon Skeet on Versioning, and how it makes my head hurt"
 date = "2020-05-11T07:32:26+00:00"
 author = "ar01grd5"
 aliases = ["/27-may-2020-jon-skeet-on-versioning-and-how-it-makes-my-head-hurt/"]
+
+[event]
+  title = "Versioning, and how it makes my head hurt"
+  date = "2020-05-27T20:00:00+02:00"
+  speaker = "Jon Skeet"
+  meetup_url = "https://www.meetup.com/Bruges-Software-Development-Meetup-Group/events/270578662/"
 +++
 
 Software engineers use versioning all the time, and .NET is no different. Over the last couple of years, I've been thinking a lot about versioning in different contexts, and I wish I could now say I knew how to do it easily. Instead, I can at least share my experiences, highlight some problems, and maybe look at possible improvements to come. We'll look at:  

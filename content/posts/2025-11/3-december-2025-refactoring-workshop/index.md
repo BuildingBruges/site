@@ -3,6 +3,12 @@ title = "3 December 2025 - Refactoring Workshop"
 date = "2025-11-25T09:49:39+00:00"
 author = "Peter"
 aliases = ["/3-december-2025-refactoring-workshop/"]
+
+[event]
+  title = "Refactoring Workshop"
+  date = "2025-12-03T20:00:00+01:00"
+  speaker = "Peter Morlion"
+  meetup_url = "https://www.meetup.com/nl-nl/bruges-software-development-meetup-group/events/311945490/"
 +++
 
 It's time for another Building Bruges hands-on workshop! In this workshop, we'll be working on an (extremely small and limited and totally fictional) racing league manager app.

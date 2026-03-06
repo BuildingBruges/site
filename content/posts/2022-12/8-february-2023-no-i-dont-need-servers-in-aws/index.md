@@ -3,6 +3,12 @@ title = "8 February 2023: No, I don't need servers in AWS!"
 date = "2022-12-01T13:02:16+00:00"
 author = "ar01grd5"
 aliases = ["/8-february-2023-no-i-dont-need-servers-in-aws/"]
+
+[event]
+  title = "No, I don't need servers in AWS!"
+  date = "2023-02-08T20:00:00+01:00"
+  speaker = "Rob Van Pamel"
+  meetup_url = "https://www.meetup.com/bruges-software-development-meetup-group/events/290040058/"
 +++
 
 No, I do not need to manage any servers for .NET development in AWS. Serverless is a hot topic, and for most .NET developers, that means they instinctively look at Microsoft Azure. But what if I told you that you can move to AWS as well if you want to throw away these virtual machines, SQL servers, … ? But what does that mean for our architecture? In this session I will show how to set up an application architecture, using C#, for serverless on AWS. I'll touch on topics like Serverless Compute, Storage, Databases and serverless Identity Management. After this session you will have an understanding on how to use AWS services as your new development 'framework'. And although AWS will be used for demonstration, the same principles can be applied to Azure.

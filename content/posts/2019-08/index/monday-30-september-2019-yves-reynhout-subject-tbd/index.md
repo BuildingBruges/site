@@ -3,6 +3,12 @@ title = "monday 30 September 2019 – If at first you don’t succeed with Event
 date = "2019-08-12T20:31:08+00:00"
 author = "ar01grd5"
 aliases = ["/monday-30-september-2019-yves-reynhout-subject-tbd/"]
+
+[event]
+  title = "If at first you don't succeed with Event Sourcing"
+  date = "2019-09-30T20:00:00+02:00"
+  speaker = "Yves Reynhout"
+  meetup_url = "https://www.meetup.com/Bruges-Software-Development-Meetup-Group/events/263200125/"
 +++
 
 As more teams / software developers start out with event sourcing, they are confronted with fairly common problems, hindering their ability to deliver, causing technical paralysis. This talk is a gentle introduction to event sourcing and takes a practical and pattern like approach towards addressing those problems. Walk away with a better understanding .... 

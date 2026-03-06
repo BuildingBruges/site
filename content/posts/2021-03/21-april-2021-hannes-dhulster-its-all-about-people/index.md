@@ -3,6 +3,12 @@ title = "21 April 2021 - Hannes D'Hulster: It's All About People"
 date = "2021-03-22T19:21:06+00:00"
 author = "Peter"
 aliases = ["/21-april-2021-hannes-dhulster-its-all-about-people/"]
+
+[event]
+  title = "It's All About People"
+  date = "2021-04-21T20:00:00+02:00"
+  speaker = "Hannes D'Hulster"
+  meetup_url = "https://www.meetup.com/Bruges-Software-Development-Meetup-Group/events/277094402"
 +++
 
 A true story about how a 90ies email marketing tool was transformed into a modern product organisation. Product, here, deals with what features should be build and how they should work. Not technically, but from a business but mostly a user point of view.  

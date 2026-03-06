@@ -3,6 +3,12 @@ title = "20 September 2023: Simulating Machines in a Game Engine"
 date = "2023-08-21T12:34:14+00:00"
 author = "Peter"
 aliases = ["/20-september-2023-simulating-machines-in-a-game-engine/"]
+
+[event]
+  title = "Simulating Machines in a Game Engine"
+  date = "2023-09-20T20:00:00+02:00"
+  speaker = "Lienert Deprez"
+  meetup_url = "https://www.meetup.com/bruges-software-development-meetup-group/events/295585570"
 +++
 
 The use of simulations for industrial applications has greatly increased in the recent years. These digital twins are widely used: from testing software on yet-to-be-built machines to experimenting with the layout of new production lines.

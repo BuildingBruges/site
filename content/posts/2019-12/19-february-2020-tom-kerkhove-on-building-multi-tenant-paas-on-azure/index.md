@@ -3,6 +3,12 @@ title = "19 February 2020: Tom Kerkhove on Building Multi-tenant PaaS on Azure"
 date = "2019-12-03T12:06:28+00:00"
 author = "Peter"
 aliases = ["/19-february-2020-tom-kerkhove-on-building-multi-tenant-paas-on-azure/"]
+
+[event]
+  title = "Building Multi-tenant PaaS on Azure"
+  date = "2020-02-19T20:00:00+01:00"
+  speaker = "Tom Kerkhove"
+  meetup_url = "https://www.meetup.com/Bruges-Software-Development-Meetup-Group/events/267877908/"
 +++
 
 Building a multi-tenant PaaS is not a walk in the part, certainly if the platform you are building on is constantly changing.
