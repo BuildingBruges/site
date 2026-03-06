@@ -1,11 +1,10 @@
 +++
-title = "10 May 2023: How to Effectively Spy on Your Systems"
+title = "How to Effectively Spy on Your Systems"
 date = "2023-02-28T07:38:10+00:00"
 author = "Peter"
 aliases = ["/10-may-2023-how-to-effectively-spy-on-your-systems/"]
 
 [event]
-  title = "How to Effectively Spy on Your Systems"
   date = "2023-05-10T20:00:00+02:00"
   speaker = "Laïla Bougriâ"
   meetup_url = "https://www.meetup.com/bruges-software-development-meetup-group/events/291655665/"

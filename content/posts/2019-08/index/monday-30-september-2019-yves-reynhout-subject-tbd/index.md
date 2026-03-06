@@ -1,11 +1,10 @@
 +++
-title = "monday 30 September 2019 – If at first you don’t succeed with Event Sourcing - Yves Reynhout"
+title = "If at first you don't succeed with Event Sourcing"
 date = "2019-08-12T20:31:08+00:00"
 author = "ar01grd5"
 aliases = ["/monday-30-september-2019-yves-reynhout-subject-tbd/"]
 
 [event]
-  title = "If at first you don't succeed with Event Sourcing"
   date = "2019-09-30T20:00:00+02:00"
   speaker = "Yves Reynhout"
   meetup_url = "https://www.meetup.com/Bruges-Software-Development-Meetup-Group/events/263200125/"

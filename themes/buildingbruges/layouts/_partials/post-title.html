@@ -1,5 +1,5 @@
 {{ if .Page.Params.event.date }}
-  {{ dateFormat "2 January 2006" .Page.Params.event.date }} - {{ .Page.Params.title }}
+  {{ dateFormat "2 January 2006" .Page.Params.event.date }} - {{ .Page.Params.event.speaker }}: {{ .Page.Title }}
 {{ else }}
   {{ .Page.Title }}
 {{ end }}

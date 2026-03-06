@@ -1,11 +1,10 @@
 +++
-title = "28 Sept 2022: Building Offline Capable Progressive Web Apps - Yves Goeleven"
+title = "Building Offline Capable Progressive Web Apps"
 date = "2022-09-08T06:38:00+00:00"
 author = "Peter"
 aliases = ["/28-sept-2022-building-offline-capable-progressive-web-apps-yves-goeleven/"]
 
 [event]
-  title = "Building Offline Capable Progressive Web Apps"
   date = "2022-09-28T20:00:00+02:00"
   speaker = "Yves Goeleven"
   meetup_url = "https://www.meetup.com/bruges-software-development-meetup-group/events/288347330/"

@@ -1,11 +1,10 @@
 +++
-title = "18 September 2024 - Help! As an Azure developer, I’m afraid of drowning in that big lake of data stuff"
+title = "Help! As an Azure developer, I'm afraid of drowning in that big lake of data stuff"
 date = "2024-08-26T19:39:14+00:00"
 author = "ar01grd5"
 aliases = ["/__trashed/"]
 
 [event]
-  title = "Help! As an Azure developer, I'm afraid of drowning in that big lake of data stuff"
   date = "2024-09-18T20:00:00+02:00"
   speaker = "Ruben Delange"
   meetup_url = "https://www.meetup.com/bruges-software-development-meetup-group/events/303059924"

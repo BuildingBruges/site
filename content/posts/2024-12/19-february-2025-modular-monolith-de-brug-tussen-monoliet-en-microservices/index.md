@@ -1,11 +1,10 @@
 +++
-title = "19 February 2025 - 15 years of #devops, but what have we really learned?"
+title = "15 years of #devops, but what have we really learned?"
 date = "2024-12-16T12:33:05+00:00"
 author = "Peter"
 aliases = ["/19-february-2025-modular-monolith-de-brug-tussen-monoliet-en-microservices/"]
 
 [event]
-  title = "15 years of #devops, but what have we really learned?"
   date = "2025-02-19T20:00:00+01:00"
   speaker = "Kris Buytaert"
   meetup_url = "https://www.meetup.com/bruges-software-development-meetup-group/events/305110660"

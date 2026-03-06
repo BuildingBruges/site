@@ -1,11 +1,10 @@
 +++
-title = "8 February 2023: No, I don't need servers in AWS!"
+title = "No, I don't need servers in AWS!"
 date = "2022-12-01T13:02:16+00:00"
 author = "ar01grd5"
 aliases = ["/8-february-2023-no-i-dont-need-servers-in-aws/"]
 
 [event]
-  title = "No, I don't need servers in AWS!"
   date = "2023-02-08T20:00:00+01:00"
   speaker = "Rob Van Pamel"
   meetup_url = "https://www.meetup.com/bruges-software-development-meetup-group/events/290040058/"

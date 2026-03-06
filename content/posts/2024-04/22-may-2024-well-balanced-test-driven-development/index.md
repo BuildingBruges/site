@@ -1,11 +1,10 @@
 +++
-title = "22 May 2024: Well-Balanced Test-Driven Development"
+title = "Well-Balanced Test-Driven Development"
 date = "2024-04-15T13:51:56+00:00"
 author = "ar01grd5"
 aliases = ["/22-may-2024-well-balanced-test-driven-development/"]
 
 [event]
-  title = "Well-Balanced Test-Driven Development"
   date = "2024-05-22T20:00:00+02:00"
   speaker = "Jan Van Ryswyck"
   meetup_url = "https://www.meetup.com/bruges-software-development-meetup-group/events/300428576/"

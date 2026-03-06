@@ -1,11 +1,10 @@
 +++
-title = "27 May 2020: Jon Skeet on Versioning, and how it makes my head hurt"
+title = "Versioning, and how it makes my head hurt"
 date = "2020-05-11T07:32:26+00:00"
 author = "ar01grd5"
 aliases = ["/27-may-2020-jon-skeet-on-versioning-and-how-it-makes-my-head-hurt/"]
 
 [event]
-  title = "Versioning, and how it makes my head hurt"
   date = "2020-05-27T20:00:00+02:00"
   speaker = "Jon Skeet"
   meetup_url = "https://www.meetup.com/Bruges-Software-Development-Meetup-Group/events/270578662/"

@@ -1,11 +1,10 @@
 +++
-title = "20 Oct 2021: Getting API Security right - Dr. Philippe De Ryck"
+title = "Getting API Security right"
 date = "2021-09-22T12:40:55+00:00"
 author = "Peter"
 aliases = ["/20-oct-2021-getting-api-security-right-dr-philippe-de-ryck/"]
 
 [event]
-  title = "Getting API Security right"
   date = "2021-10-20T20:00:00+02:00"
   speaker = "Dr. Philippe De Ryck"
   meetup_url = "https://www.meetup.com/Bruges-Software-Development-Meetup-Group/events/280861696/"

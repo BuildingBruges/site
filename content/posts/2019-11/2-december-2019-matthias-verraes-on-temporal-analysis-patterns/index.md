@@ -1,11 +1,10 @@
 +++
-title = "2 December 2019: Mathias Verraes on Temporal Analysis Patterns"
+title = "Temporal Analysis Patterns"
 date = "2019-11-14T11:51:44+00:00"
 author = "Peter"
 aliases = ["/2-december-2019-matthias-verraes-on-temporal-analysis-patterns/"]
 
 [event]
-  title = "Temporal Analysis Patterns"
   date = "2019-12-02T20:00:00+01:00"
   speaker = "Matthias Verraes"
   meetup_url = "https://www.meetup.com/Bruges-Software-Development-Meetup-Group/events/266460627"
