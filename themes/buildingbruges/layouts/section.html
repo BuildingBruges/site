@@ -11,11 +11,8 @@
   <header class="entry-header has-text-align-center">
     <div class="entry-header-inner section-inner medium">
       <h2 class="entry-title heading-size-1">
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <a href="{{ .RelPermalink }}">{{ partial "post-title.html" . }}</a>
       </h2>
-      {{ if not .Date.IsZero }}
-      <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format ":date_long" }}</time>
-      {{ end }}
     </div>
   </header>
   <div class="post-inner thin">

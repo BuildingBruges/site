@@ -2,17 +2,17 @@
 <article class="post singular">
   <header class="entry-header has-text-align-center">
     <div class="entry-header-inner section-inner medium">
-      <h1 class="entry-title heading-size-1">{{ .Title }}</h1>
-      {{ if not .Date.IsZero }}
-      <div class="post-meta-wrapper">
-        <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format ":date_long" }}</time>
-      </div>
-      {{ end }}
+      <h1 class="entry-title heading-size-1">{{ partial "post-title.html" . }}</h1>
     </div>
   </header>
   <div class="post-inner thin">
     <div class="entry-content">
       {{ .Content }}
+      {{ if not .Date.IsZero }}
+      <div class="post-meta-wrapper">
+        <time datetime="{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}">{{ .Date | time.Format ":date_long" }}</time>
+      </div>
+      {{ end }}
     </div>
   </div>
 </article>

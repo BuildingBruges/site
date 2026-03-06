@@ -1,0 +1,5 @@
+{{ if .Page.Params.event.date }}
+  {{ dateFormat "2 January 2006" .Page.Params.event.date }} - {{ .Page.Params.title }}
+{{ else }}
+  {{ .Page.Title }}
+{{ end }}
