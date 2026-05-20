@@ -1,0 +1,15 @@
+{{ $posts := where site.RegularPages "Type" "posts" }}
+{{ $events := where $posts ".Params.event" "ne" nil }}
+
+{{ range ($events.GroupByParamDate "event.date" "2006" ) }}
+<h2>{{ .Key }}</h2>
+
+  <ul>
+  {{ range $event := (.Pages.ByParam "event.date").Reverse }}
+    <li>{{ dateFormat "2 January" $event.Params.event.date }}: <a href="{{ .RelPermalink }}">{{ $event.Title }}</a> ({{ $event.Params.event.speaker }})</li>
+  {{ end }}
+  </ul>
+
+{{ end }}
+
+
