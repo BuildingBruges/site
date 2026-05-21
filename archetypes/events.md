@@ -5,7 +5,6 @@ author = ""
 draft = true
 
 [event]
-  title = ""
   date = ""
   speaker = ""
   meetup_url = ""
