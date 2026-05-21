@@ -64,6 +64,61 @@ hr {
 .skip-link { position: absolute; top: -9999px; }
 .skip-link:focus { top: 6px; left: 6px; z-index: 9999; background: var(--background); padding: .5rem 1rem; }
 
+/* ----- Form Fields ----- */
+
+label {  
+  font-size: 1rem;
+}
+
+input {
+  margin: .5rem 0;
+}
+
+input[type="text"],
+input[type="email"] {
+  background: #fff;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0.1rem;
+  box-shadow: none;
+  display: block;
+  font-size: 1rem;
+  max-width: 100%;
+  padding: 0.5rem 0.5rem;
+  width: 100%;
+}
+
+input[type="submit"], 
+input[type="button"],
+button {
+  border: none;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.0333em;
+  line-height: 1.25;
+  opacity: 1;
+  padding: .5em .5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: opacity 0.15s linear;
+  background-color: #257db0;
+}
+
+#mc_embed_signup {
+  .indicates-required{
+    text-align: end;
+  }
+  p.mc_referral {
+    width: 100%;
+    text-align: end;
+  }
+}
+
 /* ----- Layout helpers ----- */
 .section-inner {
   max-width: var(--max-width);
