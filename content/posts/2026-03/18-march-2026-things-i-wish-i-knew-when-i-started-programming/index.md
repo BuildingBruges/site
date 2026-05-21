@@ -14,7 +14,7 @@ Brent fell in love with code when he was twelve. Looking back, young him didn't 
 In this talk, Brent looks back at the things he wish he knew fifteen years ago and how that knowledge can help him (and hopefully you) find stability in what feels like a new era of programming.
 
 
-## About SpeakerName
+## About Brent Roose
 
 Brent has been programming for over 17 years; he is a developer advocate for PHP with [JetBrains](https://www.jetbrains.com/); the author behind [stitcher.io](https://stitcher.io/); the author of three educational programming books: [Laravel Beyond CRUD](https://laravel-beyond-crud.com/), [Front Line PHP](https://front-line-php.com/), and [Event Sourcing in Laravel](https://event-sourcing-laravel.com/); the author of [Timeline Taxi](https://timeline-taxi.com/), a short sci-fi novel; and finally, the creator of [Tempest](https://tempestphp.com/).
 
