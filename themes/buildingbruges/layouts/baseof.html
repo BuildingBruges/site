@@ -3,7 +3,7 @@
 <head>
   {{ partial "head.html" . }}
 </head>
-<body class="{{ if .IsHome }}home blog{{ else if .IsPage }}singular{{ else }}archive{{ end }}">
+<body class="{{ if .IsHome }}home blog{{ else if .IsPage }}singular{{ else }}archive{{ end }}{{ if eq .Section `conference` }} conference-section{{ end }}">
 
   <a class="skip-link screen-reader-text" href="#site-content">Skip to the content</a>
 

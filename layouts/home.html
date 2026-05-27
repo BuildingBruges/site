@@ -1,0 +1,64 @@
+{{ define "main" }}
+  {{ $posts := where site.RegularPages "Type" "posts" }}
+  {{ $paginator := .Paginate $posts.ByDate.Reverse }}
+  {{ $meetupsPage := site.GetPage "section" "posts" }}
+  {{ $conferencePage := site.GetPage "section" "conference" }}
+
+  <section class="home-portal">
+    <div class="section-inner medium">
+      <header class="home-portal-header has-text-align-center">
+        <h1 class="home-portal-title">Building Bruges</h1>
+        <p class="home-portal-intro">
+          Explore our meetup archive or head straight to the conference pages for the latest practical details.
+        </p>
+      </header>
+
+      <div class="home-portal-grid">
+        <a class="home-portal-card home-portal-card-meetups" href="{{ with $meetupsPage }}{{ .RelPermalink }}{{ else }}/posts/{{ end }}">
+          <div class="home-portal-card-brand">
+            <img class="home-portal-card-logo" src="/images/logo.png" alt="Building Bruges meetup logo">
+            <span class="home-portal-eyebrow">Community</span>
+          </div>
+          <strong class="home-portal-card-title">Meetups</strong>
+          <span class="home-portal-card-copy">Browse the current meetup content, past talks, and updates from Building Bruges.</span>
+        </a>
+
+        <a class="home-portal-card home-portal-card-conference" href="{{ with $conferencePage }}{{ .RelPermalink }}{{ else }}/conference/{{ end }}">
+          <div class="home-portal-card-brand">
+            <img class="home-portal-card-logo" src="/images/conf-logo.png" alt="Building Bruges conference logo">
+            <span class="home-portal-eyebrow">New</span>
+          </div>
+          <strong class="home-portal-card-title">Conference</strong>
+          <span class="home-portal-card-copy">Find the conference overview, venue information, schedule, speakers, and frequently asked questions.</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="meetups" class="archive-header has-text-align-center">
+    <div class="archive-header-inner section-inner medium">
+      <h2 class="archive-title">Latest meetup posts</h2>
+    </div>
+  </section>
+
+  {{ range $paginator.Pages }}
+  <article class="post">
+    <header class="entry-header has-text-align-center">
+      <div class="entry-header-inner section-inner medium">
+        <h2 class="entry-title heading-size-1">
+          <a href="{{ .RelPermalink }}">{{ partial "post-title.html" . }}</a>
+        </h2>
+      </div>
+    </header>
+    <div class="post-inner thin">
+      <div class="entry-content">
+        {{ .Summary }}
+      </div>
+      <div class="entry-readmore">
+        <a href="{{ .RelPermalink }}">More...</a>
+      </div>
+    </div>
+  </article>
+  {{ end }}
+  {{ template "_internal/pagination.html" . }}
+{{ end }}

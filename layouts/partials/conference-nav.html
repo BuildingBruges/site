@@ -1,0 +1,19 @@
+{{ $section := . }}
+{{ if not .IsSection }}
+  {{ $section = .CurrentSection }}
+{{ end }}
+
+{{ with $section }}
+<nav class="section-subnav" aria-label="Conference navigation">
+  <ul class="section-subnav-list">
+    <li class="section-subnav-item{{ if eq $.RelPermalink .RelPermalink }} current-menu-item{{ end }}">
+      <a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>Overview</a>
+    </li>
+    {{ range .RegularPages.ByWeight }}
+    <li class="section-subnav-item{{ if eq $.RelPermalink .RelPermalink }} current-menu-item{{ end }}">
+      <a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>
+    </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}
