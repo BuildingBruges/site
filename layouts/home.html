@@ -14,15 +14,6 @@
       </header>
 
       <div class="home-portal-grid">
-        <a class="home-portal-card home-portal-card-meetups" href="{{ with $meetupsPage }}{{ .RelPermalink }}{{ else }}/posts/{{ end }}">
-          <div class="home-portal-card-brand">
-            <img class="home-portal-card-logo" src="/images/logo.png" alt="Building Bruges meetup logo">
-            <span class="home-portal-eyebrow">Community</span>
-          </div>
-          <strong class="home-portal-card-title">Meetups</strong>
-          <span class="home-portal-card-copy">Browse the current meetup content, past talks, and updates from Building Bruges.</span>
-        </a>
-
         <a class="home-portal-card home-portal-card-conference" href="{{ with $conferencePage }}{{ .RelPermalink }}{{ else }}/conference/{{ end }}">
           <div class="home-portal-card-brand">
             <img class="home-portal-card-logo" src="/images/conf-logo.png" alt="Building Bruges conference logo">
@@ -30,6 +21,15 @@
           </div>
           <strong class="home-portal-card-title">Conference</strong>
           <span class="home-portal-card-copy">Find the conference overview, venue information, schedule, speakers, and frequently asked questions.</span>
+        </a>
+
+        <a class="home-portal-card home-portal-card-meetups" href="{{ with $meetupsPage }}{{ .RelPermalink }}{{ else }}/posts/{{ end }}">
+          <div class="home-portal-card-brand">
+            <img class="home-portal-card-logo" src="/images/logo.png" alt="Building Bruges meetup logo">
+            <span class="home-portal-eyebrow">Community</span>
+          </div>
+          <strong class="home-portal-card-title">Meetups</strong>
+          <span class="home-portal-card-copy">Browse the current meetup content, past talks, and updates from Building Bruges.</span>
         </a>
       </div>
     </div>
