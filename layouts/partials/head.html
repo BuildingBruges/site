@@ -3,5 +3,5 @@
 <title>{{ if .IsHome }}{{ site.Title }}{{ with site.Params.description }} &#8211; {{ . }}{{ end }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ with site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
 <link rel="icon" href="/images/favicon.png" sizes="32x32">
-<link rel="apple-touch-icon" href="/images/logo.png">
+<link rel="apple-touch-icon" href="/images/logo.svg">
 {{ partialCached "head/css.html" . }}

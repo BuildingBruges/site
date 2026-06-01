@@ -1,9 +1,9 @@
 <div class="header-inner section-inner">
   {{ $showMainNav := and (not .IsHome) (ne .Section "conference") }}
   {{ $showConferenceNav := eq .Section "conference" }}
-  {{ $logoPath := "/images/logo.png" }}
+  {{ $logoPath := "/images/logo.svg" }}
   {{ if $showConferenceNav }}
-    {{ $logoPath = "/images/conf-logo.png" }}
+    {{ $logoPath = "/images/conf-logo.svg" }}
   {{ end }}
 
   <div class="header-titles-wrapper">
