@@ -1,0 +1,27 @@
+{{ define "main" }}
+<article class="post singular conference-page">
+  <header class="entry-header has-text-align-center">
+    <div class="entry-header-inner section-inner medium">
+      <h1 class="entry-title heading-size-1">{{ .Title }}</h1>
+    </div>
+  </header>
+
+  <div class="post-inner thin">
+    <div class="entry-content">
+      {{ .Content }}
+
+      <section class="conference-overview-links">
+        <h2>Explore the conference</h2>
+        <div class="conference-overview-grid">
+          {{ range .RegularPages.ByWeight }}
+          <a class="conference-overview-card" href="{{ .RelPermalink }}">
+            <strong>{{ .Title }}</strong>
+            <span>{{ .Summary | plainify }}</span>
+          </a>
+          {{ end }}
+        </div>
+      </section>
+    </div>
+  </div>
+</article>
+{{ end }}

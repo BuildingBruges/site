@@ -1,7 +1,6 @@
 baseURL = 'https://buildingbruges.be/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'Building Bruges'
-theme = 'buildingbruges'
 paginate = 10
 
 [params]
@@ -18,21 +17,35 @@ url    = "/events/"
 weight = 2
 
 [[menus.main]]
+name   = "Conference"
+url    = "/conference/"
+weight = 3
+
+[[menus.main]]
 name   = "Newsletter"
 url    = "/stay-informed/"
-weight = 3
+weight = 4
 
 [[menus.main]]
 name   = "About"
 url    = "/about/"
-weight = 4
+weight = 5
 
 [[menus.main]]
 name   = "Code of Conduct"
 url    = "/code-of-conduct/"
-weight = 5
+weight = 6
 
 [[menus.main]]
 name   = "Call for Papers"
 url    = "/call-for-papers/"
-weight = 6
+weight = 7
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
+        title = true
