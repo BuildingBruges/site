@@ -14,7 +14,7 @@ Onderwijscentrum d'Abdij <br />
 Baron Ruzettelaan 435 <br />
 Bruges
 
-October 9, 2026
+October 8, 2026
 
 ## Tickets
 
