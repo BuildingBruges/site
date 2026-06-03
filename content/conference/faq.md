@@ -21,7 +21,7 @@ October 9, 2026
 ### When will we be able to buy tickets?
 
 We can't give you an exact date on that yet, but
-[subscribe to our newsletter]() and we'll keep you posted!
+[subscribe to our newsletter](../newsletter) and we'll keep you posted!
 
 ### Are tickets refundable?
 
