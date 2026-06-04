@@ -1,6 +1,6 @@
 +++
 title = "Newsletter"
-weight = 4
+weight = 5
 summary = "Keep up to date easily."
 +++
 

@@ -1,6 +1,6 @@
 +++
 title = "FAQ"
-weight = 5
+weight = 6
 summary = "Still have some questions?"
 +++
 

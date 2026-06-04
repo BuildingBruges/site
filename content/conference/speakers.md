@@ -1,6 +1,6 @@
 +++
 title = "Speakers"
-weight = 3
+weight = 4
 summary = "Check out the people that will be speaking."
 +++
 

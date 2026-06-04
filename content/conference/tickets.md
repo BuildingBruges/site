@@ -1,7 +1,7 @@
 +++
 title = "Tickets"
-weight = 6
-summary = "More info about tickets."
+weight = 1
+summary = "Buy your tickets here."
 +++
 
 It's still early days and we don't have any details about
