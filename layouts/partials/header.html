@@ -17,14 +17,23 @@
     </div>
   </div>
 
-  {{ if or $showMainNav $showConferenceNav }}
-  <div class="header-navigation-wrapper">
-    {{ if $showConferenceNav }}
-      {{ partial "conference-nav.html" . }}
-    {{ else if $showMainNav }}
-    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  <div class="header-actions">
+    {{ if or $showMainNav $showConferenceNav }}
+    <div class="header-navigation-wrapper">
+      {{ if $showConferenceNav }}
+        {{ partial "conference-nav.html" . }}
+      {{ else if $showMainNav }}
+      {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+      {{ end }}
+    </div>
     {{ end }}
+
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle color theme" aria-pressed="false" title="Switch color theme">
+      <span class="theme-toggle-track" aria-hidden="true">
+        <span class="theme-toggle-thumb"></span>
+      </span>
+      <span class="theme-toggle-label" data-theme-toggle-label>Light</span>
+    </button>
   </div>
-  {{ end }}
 
 </div>
