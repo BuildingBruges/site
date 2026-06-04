@@ -4,8 +4,10 @@ weight = 1
 summary = "Buy your tickets here."
 +++
 
-It's still early days and we don't have any details about
-tickets yet. But subscribe to our newsletter and we'll let
-you know when more information is available:
+Our tickets will be priced as follows:
 
-{{< mailchimp >}}
+- Early bird (until and including 15 June): €60
+- Regular (until and including 21 September): €80
+- Late (until the day before): €90
+
+{{< weeztix >}}
