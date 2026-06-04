@@ -135,13 +135,68 @@ button {
 }
 
 #mc_embed_signup {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  clear: left;
+  color: var(--primary);
+  font: 0.875rem/1.5 var(--font-body);
+  margin: 0;
+  max-width: 600px;
+  padding: 1.5rem;
+  width: 100%;
+
   .indicates-required{
+    color: var(--secondary);
     text-align: end;
   }
+
   p.mc_referral {
+    margin: 0;
     width: 100%;
     text-align: end;
   }
+}
+
+#mc_embed_signup_scroll h2,
+#mc_embed_signup .mc-field-group label,
+#mc_embed_signup .response,
+#mc_embed_signup .asterisk {
+  color: var(--primary);
+}
+
+#mc_embed_signup_scroll h2 {
+  margin-top: 0;
+}
+
+#mc_embed_signup .asterisk {
+  color: var(--accent);
+}
+
+#mc_embed_signup .mc-field-group {
+  width: 100%;
+}
+
+#mc_embed_signup input[type="text"],
+#mc_embed_signup input[type="email"] {
+  background: var(--input-background);
+  border: 1px solid var(--border);
+  color: var(--primary);
+}
+
+#mc_embed_signup .clear.foot {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#mc_embed_signup .button {
+  background-color: var(--accent);
+  color: var(--button-text);
+}
+
+:root[data-theme="dark"] #mc_embed_signup .refferal_badge {
+  filter: brightness(0) invert(1);
 }
 
 /* ----- Layout helpers ----- */
