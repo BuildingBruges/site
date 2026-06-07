@@ -44,7 +44,12 @@ if (toggle) {
   toggle.addEventListener('click', () => {
     const nextTheme = root.dataset.theme === 'dark' ? 'light' : 'dark';
 
-    window.localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+    try {
+      window.localStorage.setItem(THEME_STORAGE_KEY, nextTheme);
+    } catch (error) {
+      // Ignore storage errors (e.g. private mode / blocked storage).
+    }
+
     applyTheme(nextTheme);
   });
 }
