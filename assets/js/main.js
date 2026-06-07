@@ -5,7 +5,13 @@ const toggleLabel = document.querySelector('[data-theme-toggle-label]');
 const systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
 
 const getStoredTheme = () => {
-  const storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
+  let storedTheme = null;
+
+  try {
+    storedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
+  } catch (error) {
+    storedTheme = null;
+  }
 
   return storedTheme === 'dark' || storedTheme === 'light' ? storedTheme : null;
 };
