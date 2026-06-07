@@ -31,7 +31,6 @@ Head on over to [the tickets page](../tickets) to get your ticket!
 ### Are tickets refundable?
 
 Yes, tickets are refundable up to two weeks before the conference date.
-Yes, tickets are refundable up to two weeks before the conference date.
 [Contact us](mailto:contact@buildingbruges.be) for more info.
 
 ### Can I get a VAT invoice?
