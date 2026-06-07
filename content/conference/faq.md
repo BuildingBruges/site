@@ -1,6 +1,6 @@
 +++
 title = "FAQ"
-weight = 5
+weight = 6
 summary = "Still have some questions?"
 +++
 
@@ -18,14 +18,24 @@ October 8, 2026
 
 ## Tickets
 
-### When will we be able to buy tickets?
+### How much does it cost?
 
-We can't give you an exact date on that yet, but
-[subscribe to our newsletter](../newsletter) and we'll keep you posted!
+Our tickets will be priced as follows:
+
+- Early bird (until and including 15 June): €60
+- Regular (until and including 21 September): €80
+- Late (until the day before): €90
+
+Head on over to [the tickets page](../tickets) to get your ticket!
 
 ### Are tickets refundable?
 
 Yes, tickets are refundable up to two weeks before the conference date.
+[Contact us](mailto:contact@buildingbruges.be) for more info.
+
+### Can I get a VAT invoice?
+
+Sure! [Contact us](mailto:contact@buildingbruges.be) for more info.
 
 ## Catering
 

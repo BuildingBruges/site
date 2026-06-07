@@ -1,6 +1,6 @@
 +++
 title = "Schedule"
-weight = 2
+weight = 3
 summary = "Take a look at the schedule for the day."
 +++
 

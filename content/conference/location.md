@@ -1,6 +1,6 @@
 +++
 title = "Location"
-weight = 1
+weight = 2
 summary = "How to get there and where to park."
 +++
 
