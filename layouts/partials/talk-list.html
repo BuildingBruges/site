@@ -12,15 +12,15 @@
 <div class="talk-list">
   {{ range . }}
   {{ $talk := . }}
-  {{ $speakerPage := site.GetPage (printf "/conference/speakers/%s" (urlize .Params.speaker)) }}
+  {{ $speakersPage := site.GetPage "/conference/speakers" }}
   <details class="talk-card">
     <summary class="talk-card-summary">
       <div class="talk-card-heading">
         <h2 class="talk-card-title">{{ .Title }}</h2>
         {{ with .Params.speaker }}
         <p class="talk-card-speaker">
-          {{ with $speakerPage }}
-          <a href="{{ .RelPermalink }}">{{ $talk.Params.speaker }}</a>
+          {{ with $speakersPage }}
+          <a href="{{ .RelPermalink }}#{{ $talk.Params.speaker | anchorize }}">{{ $talk.Params.speaker }}</a>
           {{ else }}
             {{ with $talk.Params.speakerlink }}
           <a href="{{ . }}" rel="noopener noreferrer">{{ $talk.Params.speaker }}</a>

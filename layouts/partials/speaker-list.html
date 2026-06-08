@@ -64,7 +64,7 @@
     </div>
 
     <div class="speaker-card-content">
-      <h2 class="speaker-card-name">{{ .Title }}</h2>
+      <h2 id="{{ .Title | anchorize }}" class="speaker-card-name">{{ .Title }}</h2>
       {{ with .Params.summary }}
       <p class="speaker-card-summary">{{ . }}</p>
       {{ end }}

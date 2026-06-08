@@ -10,9 +10,11 @@
       <a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>Overview</a>
     </li>
     {{ range .RegularPages.ByWeight }}
+    {{ if eq (len (split .File.Path "/")) 2 }}
     <li class="section-subnav-item{{ if eq $.RelPermalink .RelPermalink }} current-menu-item{{ end }}">
       <a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>
     </li>
+    {{ end }}
     {{ end }}
   </ul>
 </nav>
