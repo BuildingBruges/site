@@ -416,6 +416,142 @@ time {
   font-size: 1.25rem;
 }
 
+.speaker-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-top: 2rem;
+}
+
+.speaker-card {
+  display: grid;
+  grid-template-columns: minmax(12rem, 16rem) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent) 3%, var(--background));
+}
+
+.speaker-card-image {
+  width: 100%;
+  margin: 0;
+}
+
+.speaker-card-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.speaker-card-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+
+.speaker-card-links a:hover {
+  text-decoration: none;
+  color: color-mix(in srgb, var(--accent) 80%, black);
+}
+
+.speaker-card-links svg {
+  width: 2.8rem;
+  height: 2.8rem;
+  fill: currentColor;
+}
+
+.speaker-card-content > :first-child,
+.speaker-card-name,
+.speaker-card-summary {
+  margin-top: 0;
+}
+
+.speaker-card-name {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.speaker-card-summary {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+}
+
+.talk-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.talk-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent) 3%, var(--background));
+  overflow: hidden;
+}
+
+.talk-card-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.talk-card-summary::-webkit-details-marker {
+  display: none;
+}
+
+.talk-card-heading {
+  min-width: 0;
+}
+
+.talk-card-title {
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.talk-card-speaker {
+  margin: 0.5rem 0 0;
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
+.talk-card-speaker a {
+  color: inherit;
+}
+
+.talk-card-chevron {
+  width: 0.85rem;
+  height: 0.85rem;
+  flex: 0 0 auto;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  color: var(--secondary);
+  transform: rotate(45deg);
+  transition: transform 0.15s ease;
+}
+
+.talk-card[open] .talk-card-chevron {
+  transform: rotate(225deg);
+}
+
+.talk-card-body {
+  padding: 0 1.5rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.talk-card-body > :first-child {
+  margin-top: 1.5rem;
+}
+
 /* ----- Footer widgets ----- */
 .footer-nav-widgets-wrapper {
   border-top: 1px solid var(--border);
@@ -560,12 +696,18 @@ time {
   }
 
   .home-portal-grid,
-  .conference-overview-grid {
+  .conference-overview-grid,
+  .speaker-card {
     grid-template-columns: 1fr;
   }
 
   .home-portal-card,
   .conference-overview-card {
     padding: 1.5rem;
+  }
+
+  .speaker-card {
+    padding: 1.5rem;
+    gap: 1.5rem;
   }
 }

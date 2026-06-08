@@ -1,0 +1,76 @@
+{{ $speakers := slice }}
+
+{{ range site.RegularPages }}
+  {{ if and (hasPrefix .RelPermalink "/conference/speakers/") (ne .RelPermalink "/conference/speakers/") }}
+    {{ $speakers = $speakers | append . }}
+  {{ end }}
+{{ end }}
+
+{{ $speakers = sort $speakers "Weight" "asc" }}
+
+{{ with $speakers }}
+<div class="speaker-list">
+  {{ range . }}
+  {{ $speaker := . }}
+  <article class="speaker-card">
+    <div class="speaker-card-media">
+      {{ with .Params.image }}
+      <img class="speaker-card-image" src="{{ . }}" alt="{{ $speaker.Title }}">
+      {{ end }}
+
+      <div class="speaker-card-links">
+        {{ with .Params.linkedin }}
+        <a href="{{ . }}" rel="noopener noreferrer" aria-label="LinkedIn profile" title="LinkedIn profile">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M18.72 3.99997H5.37C5.19793 3.99191 5.02595 4.01786 4.86392 4.07635C4.70189 4.13484 4.55299 4.22471 4.42573 4.34081C4.29848 4.45692 4.19537 4.59699 4.12232 4.75299C4.04927 4.909 4.0077 5.07788 4 5.24997V18.63C4.01008 18.9901 4.15766 19.3328 4.41243 19.5875C4.6672 19.8423 5.00984 19.9899 5.37 20H18.72C19.0701 19.9844 19.4002 19.8322 19.6395 19.5761C19.8788 19.32 20.0082 18.9804 20 18.63V5.24997C20.0029 5.08247 19.9715 4.91616 19.9078 4.76122C19.8441 4.60629 19.7494 4.466 19.6295 4.34895C19.5097 4.23191 19.3672 4.14059 19.2108 4.08058C19.0544 4.02057 18.8874 3.99314 18.72 3.99997ZM9 17.34H6.67V10.21H9V17.34ZM7.89 9.12997C7.72741 9.13564 7.5654 9.10762 7.41416 9.04768C7.26291 8.98774 7.12569 8.89717 7.01113 8.78166C6.89656 8.66615 6.80711 8.5282 6.74841 8.37647C6.6897 8.22474 6.66301 8.06251 6.67 7.89997C6.66281 7.73567 6.69004 7.57169 6.74995 7.41854C6.80986 7.26538 6.90112 7.12644 7.01787 7.01063C7.13463 6.89481 7.2743 6.80468 7.42793 6.74602C7.58157 6.68735 7.74577 6.66145 7.91 6.66997C8.07259 6.66431 8.2346 6.69232 8.38584 6.75226C8.53709 6.8122 8.67431 6.90277 8.78887 7.01828C8.90344 7.13379 8.99289 7.27174 9.05159 7.42347C9.1103 7.5752 9.13699 7.73743 9.13 7.89997C9.13719 8.06427 9.10996 8.22825 9.05005 8.3814C8.99014 8.53456 8.89888 8.6735 8.78213 8.78931C8.66537 8.90513 8.5257 8.99526 8.37207 9.05392C8.21843 9.11259 8.05423 9.13849 7.89 9.12997ZM17.34 17.34H15V13.44C15 12.51 14.67 11.87 13.84 11.87C13.5822 11.8722 13.3313 11.9541 13.1219 12.1045C12.9124 12.2549 12.7546 12.4664 12.67 12.71C12.605 12.8926 12.5778 13.0865 12.59 13.28V17.34H10.29V10.21H12.59V11.21C12.7945 10.8343 13.0988 10.5225 13.4694 10.3089C13.84 10.0954 14.2624 9.98848 14.69 9.99997C16.2 9.99997 17.34 11 17.34 13.13V17.34Z" />
+          </svg>
+          <span class="screen-reader-text">LinkedIn</span>
+        </a>
+        {{ end }}
+        {{ with .Params.mastodon }}
+        <a href="{{ . }}" rel="me noopener noreferrer" aria-label="Mastodon profile" title="Mastodon profile">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="-80 -80 1300 1300" version="1.1">
+            <path d="M499 112q-93 1 -166 11q-81 11 -128 33l-14 8q-16 10 -32 25q-22 21 -38 47q-21 33 -32 73q-14 47 -14 103v37q0 77 1 119q3 113 18 188q19 95 62 154q50 67 134 89q109 29 210 24q46 -3 88 -12q30 -7 55 -17l19 -8l-4 -75l-22 6q-28 6 -57 10q-41 6 -78 4q-53 -1 -80 -7 q-43 -8 -67 -30q-29 -25 -35 -72q-2 -14 -2 -29l25 6q31 6 65 10q48 7 93 9q42 2 92 -2q32 -2 88 -9t107 -30q49 -23 81.5 -54.5t38.5 -63.5q9 -45 13 -109q4 -46 5 -97v-41q0 -56 -14 -103q-11 -40 -32 -73q-16 -26 -38 -47q-15 -15 -32 -25q-12 -8 -14 -8 q-46 -22 -127 -33q-74 -10 -166 -11h-3zM367 267q73 0 109 56l24 39l24 -39q36 -56 109 -56q63 0 101 43t38 117v239h-95v-232q0 -74 -61 -74q-69 0 -69 88v127h-94v-127q0 -88 -69 -88q-61 0 -61 74v232h-95v-239q0 -74 38 -117t101 -43z"/>
+          </svg>
+          <span class="screen-reader-text">Mastodon</span>
+        </a>
+        {{ end }}
+        {{ with .Params.youtube }}
+        <a href="{{ . }}" rel="noopener noreferrer" aria-label="YouTube channel" title="YouTube channel">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 -5 24 24" version="1.1">
+            <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+              <g id="Dribbble-Light-Preview" transform="translate(-300.000000, -7442.000000)">
+                <g id="icons" transform="translate(56.000000, 160.000000)">
+                  <path d="M251.988432,7291.58588 L251.988432,7285.97425 C253.980638,7286.91168 255.523602,7287.8172 257.348463,7288.79353 C255.843351,7289.62824 253.980638,7290.56468 251.988432,7291.58588 M263.090998,7283.18289 C262.747343,7282.73013 262.161634,7282.37809 261.538073,7282.26141 C259.705243,7281.91336 248.270974,7281.91237 246.439141,7282.26141 C245.939097,7282.35515 245.493839,7282.58153 245.111335,7282.93357 C243.49964,7284.42947 244.004664,7292.45151 244.393145,7293.75096 C244.556505,7294.31342 244.767679,7294.71931 245.033639,7294.98558 C245.376298,7295.33761 245.845463,7295.57995 246.384355,7295.68865 C247.893451,7296.0008 255.668037,7296.17532 261.506198,7295.73552 C262.044094,7295.64178 262.520231,7295.39147 262.895762,7295.02447 C264.385932,7293.53455 264.28433,7285.06174 263.090998,7283.18289" id="youtube-[#168]">
+                  </path>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <span class="screen-reader-text">YouTube</span>
+        </a>
+        {{ end }}
+        {{ with .Params.website }}
+        <a href="{{ . }}" rel="noopener noreferrer" aria-label="Website" title="Website">
+          <svg viewBox="0 -2 28 28" aria-hidden="true" focusable="false" fill="none" stroke="#FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path>
+            <path d="M2 12h20"></path>
+          </svg>
+          <span class="screen-reader-text">Website</span>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="speaker-card-content">
+      <h2 id="{{ .Title | anchorize }}" class="speaker-card-name">{{ .Title }}</h2>
+      {{ with .Params.summary }}
+      <p class="speaker-card-summary">{{ . }}</p>
+      {{ end }}
+      {{ .Content }}
+    </div>
+  </article>
+  {{ end }}
+</div>
+{{ end }}
