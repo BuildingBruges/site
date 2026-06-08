@@ -4,7 +4,7 @@ weight = 4
 summary = "Check out the people that will be speaking."
 +++
 
-We're still contacting speakers and creating a schedule. Be sure to check back later, or subscribe
-to our newsletter:
+We're excited to welcome these speakers. This list is currently incomplete,
+so come back later or better yet, [sign up for our newsletter](../newsletter).
 
-{{< mailchimp >}}
+Also, take a loot at [the schedule](../schedule).

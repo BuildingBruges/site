@@ -1,0 +1,40 @@
+{{ $speakers := slice }}
+
+{{ range site.RegularPages }}
+  {{ if and (hasPrefix .RelPermalink "/conference/speakers/") (ne .RelPermalink "/conference/speakers/") }}
+    {{ $speakers = $speakers | append . }}
+  {{ end }}
+{{ end }}
+
+{{ $speakers = sort $speakers "Weight" "asc" }}
+
+{{ with $speakers }}
+<div class="speaker-list">
+  {{ range . }}
+  {{ $speaker := . }}
+  <article class="speaker-card">
+    <div class="speaker-card-media">
+      {{ with .Params.image }}
+      <img class="speaker-card-image" src="{{ . }}" alt="{{ $speaker.Title }}">
+      {{ end }}
+
+      <div class="speaker-card-links">
+        {{ with .Params.linkedin }}
+        <a href="{{ . }}" rel="noopener noreferrer">LinkedIn</a>
+        {{ end }}
+        {{ with .Params.website }}
+        <a href="{{ . }}" rel="noopener noreferrer">Website</a>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="speaker-card-content">
+      {{ with .Params.summary }}
+      <h2 class="speaker-card-summary">{{ . }}</h2>
+      {{ end }}
+      {{ .Content }}
+    </div>
+  </article>
+  {{ end }}
+</div>
+{{ end }}

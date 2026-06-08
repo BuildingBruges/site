@@ -9,6 +9,9 @@
   <div class="post-inner thin">
     <div class="entry-content">
       {{ .Content }}
+      {{ if eq .File.BaseFileName "speakers" }}
+      {{ partial "speaker-list.html" . }}
+      {{ end }}
     </div>
   </div>
 </article>
