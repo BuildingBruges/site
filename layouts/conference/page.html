@@ -12,6 +12,9 @@
       {{ if eq .File.BaseFileName "speakers" }}
       {{ partial "speaker-list.html" . }}
       {{ end }}
+      {{ if eq .File.BaseFileName "schedule" }}
+      {{ partial "talk-list.html" . }}
+      {{ end }}
     </div>
   </div>
 </article>

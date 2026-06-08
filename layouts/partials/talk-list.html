@@ -1,0 +1,43 @@
+{{ $talks := slice }}
+
+{{ range site.RegularPages }}
+  {{ if and (hasPrefix .RelPermalink "/conference/talks/") (ne .RelPermalink "/conference/talks/") }}
+    {{ $talks = $talks | append . }}
+  {{ end }}
+{{ end }}
+
+{{ $talks = sort $talks "Weight" "asc" }}
+
+{{ with $talks }}
+<div class="talk-list">
+  {{ range . }}
+  {{ $talk := . }}
+  {{ $speakerPage := site.GetPage (printf "/conference/speakers/%s" (urlize .Params.speaker)) }}
+  <details class="talk-card">
+    <summary class="talk-card-summary">
+      <div class="talk-card-heading">
+        <h2 class="talk-card-title">{{ .Title }}</h2>
+        {{ with .Params.speaker }}
+        <p class="talk-card-speaker">
+          {{ with $speakerPage }}
+          <a href="{{ .RelPermalink }}">{{ $talk.Params.speaker }}</a>
+          {{ else }}
+            {{ with $talk.Params.speakerlink }}
+          <a href="{{ . }}" rel="noopener noreferrer">{{ $talk.Params.speaker }}</a>
+            {{ else }}
+          {{ $talk.Params.speaker }}
+            {{ end }}
+          {{ end }}
+        </p>
+        {{ end }}
+      </div>
+      <span class="talk-card-chevron" aria-hidden="true"></span>
+    </summary>
+
+    <div class="talk-card-body">
+      {{ .Content }}
+    </div>
+  </details>
+  {{ end }}
+</div>
+{{ end }}
