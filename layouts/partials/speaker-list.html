@@ -64,8 +64,9 @@
     </div>
 
     <div class="speaker-card-content">
+      <h2 class="speaker-card-name">{{ .Title }}</h2>
       {{ with .Params.summary }}
-      <h2 class="speaker-card-summary">{{ . }}</h2>
+      <p class="speaker-card-summary">{{ . }}</p>
       {{ end }}
       {{ .Content }}
     </div>

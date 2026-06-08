@@ -465,12 +465,20 @@ time {
 }
 
 .speaker-card-content > :first-child,
+.speaker-card-name,
 .speaker-card-summary {
   margin-top: 0;
 }
 
+.speaker-card-name {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
 .speaker-card-summary {
-  font-size: 1.5rem;
+  color: var(--secondary);
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
 }
 
 /* ----- Footer widgets ----- */
