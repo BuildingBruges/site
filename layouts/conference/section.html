@@ -14,7 +14,8 @@
         <h2>Explore the conference</h2>
         <div class="conference-overview-grid">
           {{ range .RegularPages.ByWeight }}
-          {{ if eq (len (split .File.Path "/")) 2 }}
+          {{ $dir := replace .File.Dir "\\" "/" }}
+          {{ if eq $dir "conference/" }}
           <a class="conference-overview-card" href="{{ .RelPermalink }}">
             <strong>{{ .Title }}</strong>
             <span>{{ .Summary | plainify }}</span>
