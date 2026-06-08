@@ -1,6 +1,6 @@
 {{ $section := . }}
-{{ if not .IsSection }}
-  {{ $section = .CurrentSection }}
+{{ with .FirstSection }}
+  {{ $section = . }}
 {{ end }}
 
 {{ with $section }}
@@ -9,13 +9,10 @@
     <li class="section-subnav-item{{ if eq $.RelPermalink .RelPermalink }} current-menu-item{{ end }}">
       <a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>Overview</a>
     </li>
-    {{ range .RegularPages.ByWeight }}
-    {{ $dir := replace .File.Dir "\\" "/" }}
-    {{ if eq $dir "conference/" }}
+    {{ range .Pages.ByWeight }}
     <li class="section-subnav-item{{ if eq $.RelPermalink .RelPermalink }} current-menu-item{{ end }}">
       <a href="{{ .RelPermalink }}"{{ if eq $.RelPermalink .RelPermalink }} aria-current="page"{{ end }}>{{ .Title }}</a>
     </li>
-    {{ end }}
     {{ end }}
   </ul>
 </nav>
