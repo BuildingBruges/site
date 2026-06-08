@@ -1,7 +1,14 @@
 {{ $talks := slice }}
+{{ $speakerAnchors := dict }}
 
 {{ range site.RegularPages }}
-  {{ if and (hasPrefix .RelPermalink "/conference/talks/") (ne .RelPermalink "/conference/talks/") }}
+  {{ if and (hasPrefix .RelPermalink "/conference/speakers/") (ne .RelPermalink "/conference/speakers/") }}
+    {{ $speakerAnchors = merge $speakerAnchors (dict (lower .Title) (.Title | anchorize)) }}
+  {{ end }}
+{{ end }}
+
+{{ range site.RegularPages }}
+  {{ if and (hasPrefix .RelPermalink "/conference/schedule/") (ne .RelPermalink "/conference/schedule/") }}
     {{ $talks = $talks | append . }}
   {{ end }}
 {{ end }}
@@ -19,13 +26,15 @@
         <h2 class="talk-card-title">{{ .Title }}</h2>
         {{ with .Params.speaker }}
         <p class="talk-card-speaker">
-          {{ with $speakersPage }}
-          <a href="{{ .RelPermalink }}#{{ $talk.Params.speaker | anchorize }}">{{ $talk.Params.speaker }}</a>
+          {{ $speakerName := $talk.Params.speaker }}
+          {{ $speakerAnchor := index $speakerAnchors (lower $speakerName) }}
+          {{ if and $speakersPage $speakerAnchor }}
+          <a href="{{ $speakersPage.RelPermalink }}#{{ $speakerAnchor }}">{{ $speakerName }}</a>
           {{ else }}
             {{ with $talk.Params.speakerlink }}
-          <a href="{{ . }}" rel="noopener noreferrer">{{ $talk.Params.speaker }}</a>
+          <a href="{{ . }}" rel="noopener noreferrer">{{ $speakerName }}</a>
             {{ else }}
-          {{ $talk.Params.speaker }}
+          {{ $speakerName }}
             {{ end }}
           {{ end }}
         </p>
