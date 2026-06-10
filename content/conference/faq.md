@@ -30,8 +30,8 @@ Head on over to [the tickets page](../tickets) to get your ticket!
 
 ### Are tickets refundable?
 
-Yes, tickets are refundable up to two weeks before the conference date.
-[Contact us](mailto:contact@buildingbruges.be) for more info.
+Ticket sales are handled by Weeztix. If you take the additional
+cancellation insurance, tickets are refundable.
 
 ### Can I get a VAT invoice?
 
