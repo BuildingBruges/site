@@ -2,6 +2,28 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ if .IsHome }}{{ site.Title }}{{ with site.Params.description }} &#8211; {{ . }}{{ end }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ with site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+<meta name="color-scheme" content="light dark">
 <link rel="icon" href="/images/favicon.png" sizes="32x32">
 <link rel="apple-touch-icon" href="/images/logo.svg">
+<script>
+  (function() {
+    var storageKey = 'building-bruges-theme';
+    var root = document.documentElement;
+    var storedTheme = null;
+
+    try {
+      storedTheme = window.localStorage.getItem(storageKey);
+    } catch (error) {
+      storedTheme = null;
+    }
+
+    var theme = storedTheme === 'dark' || storedTheme === 'light'
+      ? storedTheme
+      : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+    root.classList.remove('no-js');
+    root.dataset.theme = theme;
+    root.style.colorScheme = theme;
+  }());
+</script>
 {{ partialCached "head/css.html" . }}
