@@ -6,6 +6,12 @@ summary = "Meet the organizations supporting the conference."
 
 We're grateful to our sponsors for helping make Building Bruges Conference possible.
 
-<a href="https://www.vandenbroele.be/" target="_blank" rel="noopener noreferrer">
-  <img src="/images/conf/sponsors/vanden-broele-dark-logo.svg" alt="Vanden Broele logo" style="max-width: 280px; height: auto;" />
-</a>
+<div class="sponsor-logo-grid">
+  <a class="sponsor-logo-link" href="https://www.vandenbroele.be/" target="_blank" rel="noopener noreferrer">
+    <img class="sponsor-logo-image" src="/images/conf/sponsors/vanden-broele-dark-logo.svg" alt="Vanden Broele logo" />
+  </a>
+
+  <a class="sponsor-logo-link" href="https://www.codit.eu/" target="_blank" rel="noopener noreferrer">
+    <img class="sponsor-logo-image" src="/images/conf/sponsors/codit.jpg" alt="Codit logo" />
+  </a>
+</div>
