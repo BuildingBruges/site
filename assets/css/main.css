@@ -416,6 +416,36 @@ time {
   font-size: 1.25rem;
 }
 
+.sponsor-logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: stretch;
+  margin: 1.5rem 0 0;
+}
+
+.sponsor-logo-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 8rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent) 4%, var(--background));
+}
+
+.sponsor-logo-link:hover,
+.sponsor-logo-link:focus {
+  text-decoration: none;
+  border-color: var(--accent);
+}
+
+.entry-content .sponsor-logo-image {
+  max-width: 280px;
+  margin: 0;
+}
+
 .speaker-list {
   display: flex;
   flex-direction: column;
@@ -698,6 +728,10 @@ time {
   .home-portal-grid,
   .conference-overview-grid,
   .speaker-card {
+    grid-template-columns: 1fr;
+  }
+
+  .sponsor-logo-grid {
     grid-template-columns: 1fr;
   }
 
