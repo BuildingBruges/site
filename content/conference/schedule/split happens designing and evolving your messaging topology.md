@@ -1,6 +1,7 @@
 +++
 title = "Split Happens: designing and evolving your messaging topology"
-weight = 1
+weight = 6
+time = "15:00-15:45"
 speaker = "Laïla Bougriâ"
 speakerlink = ""
 +++

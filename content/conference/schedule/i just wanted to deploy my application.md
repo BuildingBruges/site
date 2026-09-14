@@ -1,6 +1,7 @@
 +++
 title = "I Just Wanted To Deploy My Application"
-weight = 6
+weight = 2
+time = "10:00-10:45"
 speaker = "Michaël Timmerman"
 speakerlink = ""
 +++
@@ -14,4 +15,3 @@ This is where platform engineering comes in.
 In this talk, we’ll explore why organizations are moving towards internal developer platforms, how platform teams can create reusable capabilities and golden paths, and what a modern cloud native platform looks like in practice.
 
 The goal is not to build another abstraction layer, but to create a foundation that helps teams focus on what really matters: delivering valuable software faster and with more confidence.
-

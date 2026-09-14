@@ -1,6 +1,7 @@
 +++
 title = "Lies, Logic, and the Limits of Agreement"
-weight = 1
+weight = 4
+time = "13:00-13:45"
 speaker = "Jan Bols"
 speakerlink = ""
 +++

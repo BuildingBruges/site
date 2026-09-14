@@ -1,6 +1,7 @@
 +++
 title = "Demystifying CSP for modern applications"
-weight = 1
+weight = 5
+time = "14:00-14:45"
 speaker = "Philippe De Ryck"
 speakerlink = ""
 +++

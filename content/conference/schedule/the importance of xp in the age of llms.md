@@ -1,6 +1,7 @@
 +++
 title = "The Importance Of Extreme Programming Practices In The Age Of LLMs"
-weight = 2
+weight = 3
+time = "11:00-11:45"
 speaker = "Jan Van Ryswyck"
 speakerlink = ""
 +++

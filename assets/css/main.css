@@ -548,6 +548,11 @@ time {
   font-size: 1.4rem;
 }
 
+.talk-card-time {
+  margin: 0.5rem 0 0;
+  font-weight: 600;
+}
+
 .talk-card-speaker {
   margin: 0.5rem 0 0;
   color: var(--secondary);
