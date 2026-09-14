@@ -24,6 +24,9 @@
     <summary class="talk-card-summary">
       <div class="talk-card-heading">
         <h2 class="talk-card-title">{{ .Title }}</h2>
+        {{ with .Params.time }}
+        <p class="talk-card-time">{{ . }}</p>
+        {{ end }}
         {{ with .Params.speaker }}
         <p class="talk-card-speaker">
           {{ $speakerName := $talk.Params.speaker }}

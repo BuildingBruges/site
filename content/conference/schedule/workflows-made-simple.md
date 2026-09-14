@@ -1,6 +1,7 @@
 +++
 title = "Workflows Made Simple"
 weight = 1
+time = "09:00-09:45"
 speaker = "Yves Reynhout"
 speakerlink = ""
 +++
