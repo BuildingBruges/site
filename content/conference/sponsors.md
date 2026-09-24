@@ -14,4 +14,8 @@ We're grateful to our sponsors for helping make Building Bruges Conference possi
   <a class="sponsor-logo-link" href="https://www.codit.eu/" target="_blank" rel="noopener noreferrer">
     <img class="sponsor-logo-image" src="/images/conf/sponsors/codit.jpg" alt="Codit logo" />
   </a>
+
+  <a class="sponsor-logo-link" href="https://www.bestmix.com/" target="_blank" rel="noopener noreferrer">
+    <img class="sponsor-logo-image" src="/images/conf/sponsors/bestmix.png" alt="Bestmix logo" />
+  </a>
 </div>
